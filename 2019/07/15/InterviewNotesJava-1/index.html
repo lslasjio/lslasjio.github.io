@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Java面试笔记（1） | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、Java基础(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？ 1字节=8位（1B=8bit）   （二）、String ，Stringbuffer， StringBuilder 相关1.String能被继承吗？为什么？不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java面试笔记（1）">
+<meta property="og:url" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、Java基础(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？ 1字节=8位（1B=8bit）   （二）、String ，Stringbuffer， StringBuilder 相关1.String能被继承吗？为什么？不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp1.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp2.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5C3.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp4.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp5.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp6.png">
+<meta property="og:updated_time" content="2019-07-15T15:16:21.998Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java面试笔记（1）">
+<meta name="twitter:description" content="一、Java基础(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？ 1字节=8位（1B=8bit）   （二）、String ，Stringbuffer， StringBuilder 相关1.String能被继承吗？为什么？不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-InterviewNotesJava-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/15/InterviewNotesJava-1/" class="article-date">
+  <time datetime="2019-07-15T09:10:39.000Z" itemprop="datePublished">2019-07-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Java面试笔记（1）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一、Java基础"><a href="#一、Java基础" class="headerlink" title="一、Java基础"></a>一、Java基础</h1><h3 id="一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"><a href="#一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？" class="headerlink" title="(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"></a>(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？</h3><p><img src="/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp1.png" alt="p1"></p>
+<p>1字节=8位（1B=8bit）</p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp2.png" alt="p2"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5C3.png" alt="3"></p>
+<h3 id="（二）、String-，Stringbuffer，-StringBuilder-相关"><a href="#（二）、String-，Stringbuffer，-StringBuilder-相关" class="headerlink" title="（二）、String ，Stringbuffer， StringBuilder 相关"></a>（二）、String ，Stringbuffer， StringBuilder 相关</h3><h5 id="1-String能被继承吗？为什么？"><a href="#1-String能被继承吗？为什么？" class="headerlink" title="1.String能被继承吗？为什么？"></a>1.String能被继承吗？为什么？</h5><p>不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，无法被继承。</p>
+<h5 id="2-String，-Stringbuffer，-StringBuilder-的区别。"><a href="#2-String，-Stringbuffer，-StringBuilder-的区别。" class="headerlink" title="2.String， Stringbuffer， StringBuilder 的区别。"></a>2.String， Stringbuffer， StringBuilder 的区别。</h5><h6 id="（1）-介绍"><a href="#（1）-介绍" class="headerlink" title="（1）.介绍"></a>（1）.介绍</h6><p>String：</p>
+<p>在Java中，字符串属于对象，被final修饰的类，因此的String值是不可变的，每次对该类的操作都会生成新的String对象，会对内存空间造成浪费。流程如下图：</p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp4.png" alt="p4"></p>
+<p>Stringbuffer和 StringBuilder：</p>
+<p>当对字符串进行修改的时候，需要使用 StringBuffer 和 StringBuilder 类。<br>和 String 类不同的是，StringBuffer 和 StringBuilder类的对象能够被多次的修改，并且不产生新的未使用对象。<br>StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于StringBuilder 的方法不是线程安全的（不能同步访问）。<br>由于 StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。</p>
+<h6 id="（2）-继承结构"><a href="#（2）-继承结构" class="headerlink" title="（2）.继承结构"></a>（2）.继承结构</h6><p><img src="/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp5.png" alt="p5"></p>
+<h6 id="（3）-区别"><a href="#（3）-区别" class="headerlink" title="（3）.区别"></a>（3）.区别</h6><p>a.字符修改的区别（主要）:</p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/G:%5CBlog%5Cmybloga%5Csource_posts%5CInterviewNotesJava-1%5Cp6.png" alt="p6"></p>
+<p>b.初始化的区别,String可以空赋值，后者不行:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String s = <span class="keyword">null</span>;   </span><br><span class="line">String s = “abc”;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">StringBuffer s = <span class="keyword">null</span>; <span class="comment">//结果警告：Null pointer access: The variable result can only be null at this location</span></span><br><span class="line">StringBuffer s = <span class="keyword">new</span> StringBuffer();<span class="comment">//StringBuffer对象是一个空的对象</span></span><br><span class="line">StringBuffer s = <span class="keyword">new</span> StringBuffer(“abc”);<span class="comment">//创建带有内容的StringBuffer对象,对象的内容就是字符串”</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="（4）-小结"><a href="#（4）-小结" class="headerlink" title="（4）.小结"></a>（4）.小结</h6><p>如果要操作少量的数据用 String。<br>多线程操作字符串缓冲区下操作大量数据 StringBuffer。<br>单线程操作字符串缓冲区下操作大量数据 StringBuilder。</p>
+<h3 id="三-、ArrayList-和-LinkedList-有什么区别"><a href="#三-、ArrayList-和-LinkedList-有什么区别" class="headerlink" title="(三)、ArrayList 和 LinkedList 有什么区别"></a>(三)、ArrayList 和 LinkedList 有什么区别</h3><p>ArrayList和LinkedList都实现了List接口，有以下的不同点：<br>1、ArrayList是基于索引的数据接口，它的底层是数组。它可以以O(1)时间复杂度对元素进行随机访问。与此对应，LinkedList是以元素列表的形式存储它的数据，每一个元素都和它的前一个和后一个元素链接在一起，在这种情况下，查找某个元素的时间复杂度是O(n)。<br>2、相对于ArrayList，LinkedList的插入，添加，删除操作速度更快，因为当元素被添加到集合任意位置的时候，不需要像数组那样重新计算大小或者是更新索引。<br>3、LinkedList比ArrayList更占内存，因为LinkedList为每一个节点存储了两个引用，一个指向前一个元素，一个指向下一个元素。</p>
+<h3 id="四-、讲讲类的实例化顺序，比如父类静态数据，构造函数，字段，子类静态数据，构造函数，字段，当-new-的时候，-他们的执行顺序"><a href="#四-、讲讲类的实例化顺序，比如父类静态数据，构造函数，字段，子类静态数据，构造函数，字段，当-new-的时候，-他们的执行顺序" class="headerlink" title="(四)、讲讲类的实例化顺序，比如父类静态数据，构造函数，字段，子类静态数据，构造函数，字段，当 new 的时候， 他们的执行顺序"></a>(四)、讲讲类的实例化顺序，比如父类静态数据，构造函数，字段，子类静态数据，构造函数，字段，当 new 的时候， 他们的执行顺序</h3><p>此题考察的是类加载器实例化时进行的操作步骤（加载–&gt;连接-&gt;初始化）。<br>父类静态变量、<br>父类静态代码块、<br>子类静态变量、<br>子类静态代码块、<br>父类非静态变量（父类实例成员变量）、<br>父类构造函数、<br>子类非静态变量（子类实例成员变量）、<br>子类构造函数。</p>
+<p>参考实例：<a href="https://blog.csdn.net/u014042066/article/details/77574956" target="_blank" rel="noopener">CSDN|《深入理解Java类实例化时jvm执行顺序》|石奈子</a></p>
+<p>参考文章：<a href="https://blog.csdn.net/u014042066/article/details/77394480" target="_blank" rel="noopener">CSDN|《深入Java虚拟机之类加载》|石奈子</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/15/InterviewNotesJava-1/" data-id="cjy5osev80004xcvj5n4tnqm7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/07/16/worksShow-1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          作品展示-毕业设计
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/13/blog20190713/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">个人博客搭建所用教程整理</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/07/16/worksShow-1/">作品展示-毕业设计</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/15/InterviewNotesJava-1/">Java面试笔记（1）</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/13/blog20190713/">个人博客搭建所用教程整理</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/13/blog2/">更新测试</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 WILK<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
