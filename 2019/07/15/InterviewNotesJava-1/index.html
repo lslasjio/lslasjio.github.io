@@ -14,17 +14,17 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="一、Java基础(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？ 1字节=8位（1B=8bit）   （二）、String ，Stringbuffer， StringBuilder 相关1.String能被继承吗？为什么？不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AA.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AB.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AC.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AD.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AE.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AF.PNG">
-<meta property="og:updated_time" content="2019-07-20T14:55:26.230Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AA.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AB.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AC.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AD.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AE.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AF.png">
+<meta property="og:updated_time" content="2019-07-20T15:01:32.164Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java面试笔记（1）">
 <meta name="twitter:description" content="一、Java基础(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？ 1字节=8位（1B=8bit）   （二）、String ，Stringbuffer， StringBuilder 相关1.String能被继承吗？为什么？不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AA.PNG">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/15/InterviewNotesJava-1/AA.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -93,19 +93,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、Java基础"><a href="#一、Java基础" class="headerlink" title="一、Java基础"></a>一、Java基础</h1><h3 id="一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"><a href="#一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？" class="headerlink" title="(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"></a>(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？</h3><p><img src="/2019/07/15/InterviewNotesJava-1/AA.PNG" alt="AA"></p>
+        <h1 id="一、Java基础"><a href="#一、Java基础" class="headerlink" title="一、Java基础"></a>一、Java基础</h1><h3 id="一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"><a href="#一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？" class="headerlink" title="(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"></a>(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？</h3><p><img src="/2019/07/15/InterviewNotesJava-1/AA.png" alt="AA"></p>
 <p>1字节=8位（1B=8bit）</p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AB.PNG" alt="Ab"></p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AC.PNG" alt="Ac"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AB.png" alt="Ab"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AC.png" alt="Ac"></p>
 <h3 id="（二）、String-，Stringbuffer，-StringBuilder-相关"><a href="#（二）、String-，Stringbuffer，-StringBuilder-相关" class="headerlink" title="（二）、String ，Stringbuffer， StringBuilder 相关"></a>（二）、String ，Stringbuffer， StringBuilder 相关</h3><h5 id="1-String能被继承吗？为什么？"><a href="#1-String能被继承吗？为什么？" class="headerlink" title="1.String能被继承吗？为什么？"></a>1.String能被继承吗？为什么？</h5><p>不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，无法被继承。</p>
 <h5 id="2-String，-Stringbuffer，-StringBuilder-的区别。"><a href="#2-String，-Stringbuffer，-StringBuilder-的区别。" class="headerlink" title="2.String， Stringbuffer， StringBuilder 的区别。"></a>2.String， Stringbuffer， StringBuilder 的区别。</h5><h6 id="（1）-介绍"><a href="#（1）-介绍" class="headerlink" title="（1）.介绍"></a>（1）.介绍</h6><p>String：</p>
 <p>在Java中，字符串属于对象，被final修饰的类，因此的String值是不可变的，每次对该类的操作都会生成新的String对象，会对内存空间造成浪费。流程如下图：</p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AD.PNG" alt="Ad"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AD.png" alt="Ad"></p>
 <p>Stringbuffer和 StringBuilder：</p>
 <p>当对字符串进行修改的时候，需要使用 StringBuffer 和 StringBuilder 类。<br>和 String 类不同的是，StringBuffer 和 StringBuilder类的对象能够被多次的修改，并且不产生新的未使用对象。<br>StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于StringBuilder 的方法不是线程安全的（不能同步访问）。<br>由于 StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。</p>
-<h6 id="（2）-继承结构"><a href="#（2）-继承结构" class="headerlink" title="（2）.继承结构"></a>（2）.继承结构</h6><p><img src="/2019/07/15/InterviewNotesJava-1/AE.PNG" alt="AE"></p>
+<h6 id="（2）-继承结构"><a href="#（2）-继承结构" class="headerlink" title="（2）.继承结构"></a>（2）.继承结构</h6><p><img src="/2019/07/15/InterviewNotesJava-1/AE.png" alt="AE"></p>
 <h6 id="（3）-区别"><a href="#（3）-区别" class="headerlink" title="（3）.区别"></a>（3）.区别</h6><p>a.字符修改的区别（主要）:</p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AF.PNG" alt="AF"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AF.png" alt="AF"></p>
 <p>b.初始化的区别,String可以空赋值，后者不行:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String s = <span class="keyword">null</span>;   </span><br><span class="line">String s = “abc”;</span><br></pre></td></tr></table></figure>
 
@@ -120,7 +120,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/15/InterviewNotesJava-1/" data-id="cjybnn56s0000ugvjkspb7aw5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/15/InterviewNotesJava-1/" data-id="cjybookch000028vjrp4hamaa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,7 +141,7 @@
   
     <a href="/2019/07/13/blog20190713/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">个人博客搭建所用教程整理</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>
@@ -186,7 +186,7 @@
           </li>
         
           <li>
-            <a href="/2019/07/13/blog20190713/">个人博客搭建所用教程整理</a>
+            <a href="/2019/07/13/blog20190713/">(no title)</a>
           </li>
         
           <li>

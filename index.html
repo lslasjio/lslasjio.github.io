@@ -215,7 +215,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/16/worksShow-1/" data-id="cjybnn57k0004ugvjxqp10tlg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/16/worksShow-1/" data-id="cjybookdq000428vjnws56yd5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -247,19 +247,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、Java基础"><a href="#一、Java基础" class="headerlink" title="一、Java基础"></a>一、Java基础</h1><h3 id="一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"><a href="#一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？" class="headerlink" title="(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"></a>(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？</h3><p><img src="/2019/07/15/InterviewNotesJava-1/AA.PNG" alt="AA"></p>
+        <h1 id="一、Java基础"><a href="#一、Java基础" class="headerlink" title="一、Java基础"></a>一、Java基础</h1><h3 id="一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"><a href="#一-、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？" class="headerlink" title="(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？"></a>(一)、Java有几种基本类型，占用多少字节，取值范围怎么样，默认值是多少？</h3><p><img src="/2019/07/15/InterviewNotesJava-1/AA.png" alt="AA"></p>
 <p>1字节=8位（1B=8bit）</p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AB.PNG" alt="Ab"></p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AC.PNG" alt="Ac"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AB.png" alt="Ab"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AC.png" alt="Ac"></p>
 <h3 id="（二）、String-，Stringbuffer，-StringBuilder-相关"><a href="#（二）、String-，Stringbuffer，-StringBuilder-相关" class="headerlink" title="（二）、String ，Stringbuffer， StringBuilder 相关"></a>（二）、String ，Stringbuffer， StringBuilder 相关</h3><h5 id="1-String能被继承吗？为什么？"><a href="#1-String能被继承吗？为什么？" class="headerlink" title="1.String能被继承吗？为什么？"></a>1.String能被继承吗？为什么？</h5><p>不可以，因为String的定义是这样的：”public final class String extends Object”,是被final修饰的类，无法被继承。</p>
 <h5 id="2-String，-Stringbuffer，-StringBuilder-的区别。"><a href="#2-String，-Stringbuffer，-StringBuilder-的区别。" class="headerlink" title="2.String， Stringbuffer， StringBuilder 的区别。"></a>2.String， Stringbuffer， StringBuilder 的区别。</h5><h6 id="（1）-介绍"><a href="#（1）-介绍" class="headerlink" title="（1）.介绍"></a>（1）.介绍</h6><p>String：</p>
 <p>在Java中，字符串属于对象，被final修饰的类，因此的String值是不可变的，每次对该类的操作都会生成新的String对象，会对内存空间造成浪费。流程如下图：</p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AD.PNG" alt="Ad"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AD.png" alt="Ad"></p>
 <p>Stringbuffer和 StringBuilder：</p>
 <p>当对字符串进行修改的时候，需要使用 StringBuffer 和 StringBuilder 类。<br>和 String 类不同的是，StringBuffer 和 StringBuilder类的对象能够被多次的修改，并且不产生新的未使用对象。<br>StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于StringBuilder 的方法不是线程安全的（不能同步访问）。<br>由于 StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。</p>
-<h6 id="（2）-继承结构"><a href="#（2）-继承结构" class="headerlink" title="（2）.继承结构"></a>（2）.继承结构</h6><p><img src="/2019/07/15/InterviewNotesJava-1/AE.PNG" alt="AE"></p>
+<h6 id="（2）-继承结构"><a href="#（2）-继承结构" class="headerlink" title="（2）.继承结构"></a>（2）.继承结构</h6><p><img src="/2019/07/15/InterviewNotesJava-1/AE.png" alt="AE"></p>
 <h6 id="（3）-区别"><a href="#（3）-区别" class="headerlink" title="（3）.区别"></a>（3）.区别</h6><p>a.字符修改的区别（主要）:</p>
-<p><img src="/2019/07/15/InterviewNotesJava-1/AF.PNG" alt="AF"></p>
+<p><img src="/2019/07/15/InterviewNotesJava-1/AF.png" alt="AF"></p>
 <p>b.初始化的区别,String可以空赋值，后者不行:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String s = <span class="keyword">null</span>;   </span><br><span class="line">String s = “abc”;</span><br></pre></td></tr></table></figure>
 
@@ -274,7 +274,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/15/InterviewNotesJava-1/" data-id="cjybnn56s0000ugvjkspb7aw5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/15/InterviewNotesJava-1/" data-id="cjybookch000028vjrp4hamaa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -293,16 +293,6 @@
   </div>
   <div class="article-inner">
     
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/13/blog20190713/">个人博客搭建所用教程整理</a>
-    </h1>
-  
-
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -330,21 +320,36 @@
 <p>（注：在搭建过程中需要用控制台来进行上传下载，用普通网络容易失败，建议进行科学上网，或者笔记本连接科学上网后的手机热点。科学上网在搭建过程中进行使用，后面更新文章时的上传无需科学上网）</p>
 <hr>
 <p>以上就是这篇博客主要参考的教程，接下来再做一些补充说明。</p>
-<p>一、关于写博客的软件：在部署好你的个人博客以后，需要用.md的文档来对文章内容进行编辑，此处我个人使用typora软件，因此附上该软件下载地址和md文件的基本格式教程：</p>
+<h5 id="一、关于写博客的软件："><a href="#一、关于写博客的软件：" class="headerlink" title="一、关于写博客的软件："></a>一、关于写博客的软件：</h5><p>在部署好你的个人博客以后，需要用.md的文档来对文章内容进行编辑，此处我个人使用typora软件，因此附上该软件下载地址和md文件的基本格式教程：</p>
 <ol>
 <li>typora官网下载：<a href="https://www.typora.io/" target="_blank" rel="noopener">点击此处</a></li>
 <li>[简书]《如何写md格式的文档》 作者：剃了胡子 <a href="https://www.jianshu.com/p/f378e3f2e7e1" target="_blank" rel="noopener">点击此处</a></li>
 </ol>
-<p>二、关于cmd命令：在操作过程中会用到Windows控制台命令，或者Git Bash。在此附上一些cmd常用命令以作参考：</p>
+<h5 id="二、关于cmd命令："><a href="#二、关于cmd命令：" class="headerlink" title="二、关于cmd命令："></a>二、关于cmd命令：</h5><p>在操作过程中会用到Windows控制台命令，或者Git Bash。在此附上一些cmd常用命令以作参考：</p>
 <p>C盘跳转E盘：<img src="/2019/07/13/blog20190713/2.png" alt="2"></p>
 <p>进入一个目录下面：<img src="/2019/07/13/blog20190713/3.png" alt="3"></p>
 <p>退回到上一目录：<img src="/2019/07/13/blog20190713/4.png" alt="4"></p>
 <p>具体参考教程贴：[博客园]《CMD常用命令》 作者：微时空 <a href="https://www.cnblogs.com/JTCLASSROOM/p/11050743.html" target="_blank" rel="noopener">点击此处</a></p>
+<h5 id="三、关于个人博客里的图片"><a href="#三、关于个人博客里的图片" class="headerlink" title="三、关于个人博客里的图片"></a>三、关于个人博客里的图片</h5><p>按照上文中教程6：“[简书]《hexo+github上传图片到博客》 作者：iOS收藏家<a href="https://www.jianshu.com/p/8d28027fec76" target="_blank" rel="noopener">点击此处</a>”设置好图片上传后，在实际编写MD文档中插入图片应该注意以下三点：</p>
+<ol>
+<li><h6 id="使用相对路径"><a href="#使用相对路径" class="headerlink" title="使用相对路径"></a>使用相对路径</h6><p>在插入图片时，应当根据生成的目录名来设置类似于</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![a1](blog1/a1.png)			//这是相对路径，正确</span><br></pre></td></tr></table></figure>
+
+<p>这样的格式，使用相对路径，如果使用绝对路径，就会导致上传到GitHub后，MD文档中图片路径和实际GitHub中的路径不相匹配，无法加载图片的情况。绝对路径如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!a1](C:\Blog\myblog\source\_posts\blog1\a1.png)			//这是绝对路径，错误</span><br></pre></td></tr></table></figure>
+</li>
+<li><h6 id="注意区分“-”和”-“"><a href="#注意区分“-”和”-“" class="headerlink" title="注意区分“\”和”/“"></a>注意区分“\”和”/“</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![a1](blog1/a1.png)			//使用&quot;/&quot;,正确</span><br><span class="line">![a1](blog1\a1.png)			//使用&quot;\&quot;，错误</span><br></pre></td></tr></table></figure>
+
+<p>在Typora中，写入图片路径中无论使用”/“还是”\“，都可以显示图片，但是上传图片后，只有使用“/”才可以正常显示图片。</p>
+</li>
+<li><h6 id="区分文件名和后缀的大小写"><a href="#区分文件名和后缀的大小写" class="headerlink" title="区分文件名和后缀的大小写"></a>区分文件名和后缀的大小写</h6><p>对于同一个文件“a1.png”，使用以下四种写法，在Typora中均可以正常显示，但上传文件后，只有大小写与原文件对应，才会在博客中加载该图片。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![a1](blog1/A1.png)			//文件名大写，错误</span><br><span class="line">![a1](blog1/a1.png)			//文件名与原文件一致，正确</span><br><span class="line">![a1](blog1/a1.PNG)			//后缀名大写，错误</span><br><span class="line">![a1](blog1/a1.png)			//后缀名与原文件一致，正确</span><br></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/13/blog20190713/" data-id="cjybnn5700001ugvjbgl52hk0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/13/blog20190713/" data-id="cjybookdf000228vjyjevegd0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -381,7 +386,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/13/blog2/" data-id="cjybnn5730002ugvjv4vmrtn7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/13/blog2/" data-id="cjybookd9000128vjjxwid3lz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -475,7 +480,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/12/hello-world/" data-id="cjybnn57a0003ugvjn0p3lu1w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/12/hello-world/" data-id="cjybookdi000328vjaxqeymrx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -524,7 +529,7 @@
           </li>
         
           <li>
-            <a href="/2019/07/13/blog20190713/">个人博客搭建所用教程整理</a>
+            <a href="/2019/07/13/blog20190713/">(no title)</a>
           </li>
         
           <li>
