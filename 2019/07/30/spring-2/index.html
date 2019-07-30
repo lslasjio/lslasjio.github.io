@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>个人博客搭建所用教程整理 · WILK的博客</title>
+    <title>Spring学习笔记（二）——容器，反射机制和JDOM · WILK的博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/" >WILK的博客</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">个人博客搭建所用教程整理</a>
+                <a href="#" class="post-name">Spring学习笔记（二）——容器，反射机制和JDOM</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:65vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            个人博客搭建所用教程整理
+            Spring学习笔记（二）——容器，反射机制和JDOM
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:65vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.1k</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.6k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/07/13</span>
+                    <span class="post-intro-time">2019/07/30</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,55 +395,50 @@ height:65vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>用了几天的时间搭建了第一个个人博客，还有后续需要调整，过程中全是参照网上教程，因此在此附上各个教程，以及补充少量教程中可能会有的问题。</p>
-<h1 id="主要教程"><a href="#主要教程" class="headerlink" title="主要教程"></a>主要教程</h1><p>此个人博客采用的是GitHub+hexo来进行搭建，再在腾讯云几块钱买了个域名，因此下面将附上的此方式的主要教程。</p>
-<h2 id="教程涉及的一些工具-准备工作："><a href="#教程涉及的一些工具-准备工作：" class="headerlink" title="教程涉及的一些工具/准备工作："></a>教程涉及的一些工具/准备工作：</h2><p><u>GitHub的安装与使用：<a href="https://blog.csdn.net/chinarcsdn/article/details/78726040" target="_blank" rel="noopener">GitHub使用教程、注册与安装</a></u></p>
-<p><u>Node.js下载地址：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">点击此处</a></u></p>
-<p><code>（注意：Windows系统中下载请点二进制文件（.zip）,根据个人系统进行选择）</code></p>
-<p><img src="/2019/07/13/blog20190713/1.png" alt="1"></p>
-<p>腾讯云相关：</p>
-<p><strong><code>（注：腾讯云域名并非必须购买，使用Git的“XXX.github.io”格式域名也可以免费搭建，只是这样的话域名较为复杂，而且其中也包含GitHub这样的信息。）</code></strong></p>
-<ol>
-<li><u>域名注册流程：<a href="https://cloud.tencent.com/document/product/242/9595" target="_blank" rel="noopener">点击此处</a></u></li>
-<li><u>腾讯云网址：<a href="https://cloud.tencent.com/" target="_blank" rel="noopener">点击此处</a></u></li>
-</ol>
-<h3 id="一些用到的主要教程贴"><a href="#一些用到的主要教程贴" class="headerlink" title="一些用到的主要教程贴"></a>一些用到的主要教程贴</h3><p>该博客主要搭建教程参考自以下：</p>
-<ol>
-<li><u>[CSDN]《hexo史上最全搭建教程》 作者：zjufangzh  <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">点击此处</a></u></li>
-<li><u>[bilibili]《手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo》 作者：CodeSheep <a href="https://www.bilibili.com/video/av44544186?t=430" target="_blank" rel="noopener">点击此处</a></u></li>
-<li><u>[CSDN]《用Hexo搭建博客（二）——修改基本内容》 作者：X北辰北<a href="https://blog.csdn.net/qq_35117024/article/details/81390780" target="_blank" rel="noopener">点击此处</a></u></li>
-<li><u>[CSDN]《github搭建个人网站后如何设置域名》 作者：Bright2017<a href="https://blog.csdn.net/Bright2017/article/details/78624724" target="_blank" rel="noopener">点击此处</a></u></li>
-<li><u>[云+社区]《如何把自己github博客配置到一个腾讯云购买的自定义域名上》 作者：Jerry Wang @SAP<a href="https://cloud.tencent.com/developer/article/1438545" target="_blank" rel="noopener">点击此处</a></u></li>
-<li><u>[简书]《hexo+github上传图片到博客》 作者：iOS收藏家<a href="https://www.jianshu.com/p/8d28027fec76" target="_blank" rel="noopener">点击此处</a></u></li>
-</ol>
-<p>（注：在搭建过程中需要用控制台来进行上传下载，用普通网络容易失败，建议进行科学上网，或者笔记本连接科学上网后的手机热点。科学上网在搭建过程中进行使用，后面更新文章时的上传无需科学上网）</p>
-<hr>
-<p>以上就是这篇博客主要参考的教程，接下来再做一些补充说明。</p>
-<h4 id="一、关于写博客的软件："><a href="#一、关于写博客的软件：" class="headerlink" title="一、关于写博客的软件："></a>一、关于写博客的软件：</h4><p>在部署好你的个人博客以后，需要用.md的文档来对文章内容进行编辑，此处我个人使用typora软件，因此附上该软件下载地址和md文件的基本格式教程：</p>
-<ol>
-<li><u>typora官网下载：<a href="https://www.typora.io/" target="_blank" rel="noopener">点击此处</a></u></li>
-<li><u>[简书]《如何写md格式的文档》 作者：剃了胡子 <a href="https://www.jianshu.com/p/f378e3f2e7e1" target="_blank" rel="noopener">点击此处</a></u></li>
-</ol>
-<h4 id="二、关于cmd命令："><a href="#二、关于cmd命令：" class="headerlink" title="二、关于cmd命令："></a>二、关于cmd命令：</h4><p>在操作过程中会用到Windows控制台命令，或者Git Bash。在此附上一些cmd常用命令以作参考：</p>
-<p>C盘跳转E盘：<img src="/2019/07/13/blog20190713/2.png" alt="2"></p>
-<p>进入一个目录下面：<img src="/2019/07/13/blog20190713/3.png" alt="3"></p>
-<p>退回到上一目录：<img src="/2019/07/13/blog20190713/4.png" alt="4"></p>
-<p>具体参考教程贴：<u>[博客园]《CMD常用命令》 作者：微时空 <a href="https://www.cnblogs.com/JTCLASSROOM/p/11050743.html" target="_blank" rel="noopener">点击此处</a></u></p>
-<h4 id="三、关于个人博客里的图片"><a href="#三、关于个人博客里的图片" class="headerlink" title="三、关于个人博客里的图片"></a>三、关于个人博客里的图片</h4><p>按照上文中教程6：“<u>[简书]《hexo+github上传图片到博客》 作者：iOS收藏家<a href="https://www.jianshu.com/p/8d28027fec76" target="_blank" rel="noopener">点击此处</a></u>”设置好图片上传后，在实际编写MD文档中插入图片应该注意以下三点：</p>
-<ol>
-<li><h5 id="使用相对路径"><a href="#使用相对路径" class="headerlink" title="使用相对路径"></a>使用相对路径</h5><p>在插入图片时，应当根据生成的目录名来设置类似于</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![a1](blog1/a1.png)			//这是相对路径，正确</span><br></pre></td></tr></table></figure>
+        <h1 id="何为“容器”"><a href="#何为“容器”" class="headerlink" title="何为“容器”"></a>何为“容器”</h1><p>在学习该部分内容时，不妨先了解一下，在Java中，到底什么是“容器“。在百度百科中，对于Java容器，是这么介绍的：</p>
+<blockquote>
+<p>​        容器可以管理对象的生命周期、对象与对象之间的依赖关系，您可以使用一个配置文件（通常是XML），在上面定义好对象的名称、如何产生（Prototype 方式或Singleton 方式）、哪个对象产生之后必须设定成为某个对象的属性等，在启动容器之后，所有的对象都可以直接取用，不用编写任何一行程序代码来产生对象，或是建立对象与对象之间的依赖关系。</p>
+</blockquote>
+<p>在Java中，“容器”可以看做是一种用来存储数据的数据结构，比如“集合”（Set）、“列表”(List)、“映射”(Map)等，此处内容的深入讨论，之后摸鱼时可再另开一章，先附上参考用的博客文章：<u><a href="https://blog.csdn.net/yangkaige111/article/details/79506254" target="_blank" rel="noopener">CSDN|《JAVA中关于”容器“的理解》|作者：追梦111</a></u></p>
+<h1 id="Java反射机制"><a href="#Java反射机制" class="headerlink" title="Java反射机制"></a>Java反射机制</h1><p>（Java反射机制参考文章<u><a href="https://www.cnblogs.com/jqyp/archive/2012/03/29/2423112.html" target="_blank" rel="noopener">CSDN|《Java反射机制》|作者：①块腹肌</a></u>）</p>
+<h2 id="一、什么是反射机制"><a href="#一、什么是反射机制" class="headerlink" title="一、什么是反射机制"></a>一、什么是反射机制</h2><p>简单来说，反射机制就是指一个程序在运行的时候，能够获取自身的信息。在Java中，一般只要给一个类定义了名字，就可以通过反射机制获取该类的所有信息。</p>
+<p>反射的概念是由Smith在1982年首次提出的，主要是指程序可以访问、检测和修改它本身状态或行为的一种能力。在计算机科学领域，反射特指能够进行自描述和自控制的一类应用。</p>
+<p>（注：此处对该概念的提出者进行了查找，但仅查到了两个信息：Smith，1982，待完善）</p>
+<h2 id="二、一般使用在哪里？该机制提供了什么功能？"><a href="#二、一般使用在哪里？该机制提供了什么功能？" class="headerlink" title="二、一般使用在哪里？该机制提供了什么功能？"></a>二、一般使用在哪里？该机制提供了什么功能？</h2><p>在jdbc中，通常会有这么一句代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(“com.mysql.jdbc.Driver”); <span class="comment">//加载数据库驱动，注册到驱动管理器</span></span><br></pre></td></tr></table></figure>
 
-<p>这样的格式，使用相对路径，如果使用绝对路径，就会导致上传到GitHub后，MD文档中图片路径和实际GitHub中的路径不相匹配，无法加载图片的情况。绝对路径如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![a1](C:\Blog\myblog\source\_posts\blog1\a1.png)			//这是绝对路径，错误</span><br></pre></td></tr></table></figure>
-</li>
-<li><h5 id="注意区分“-”和”-“"><a href="#注意区分“-”和”-“" class="headerlink" title="注意区分“\”和”/“"></a>注意区分“\”和”/“</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![a1](blog1/a1.png)			//使用&quot;/&quot;,正确</span><br><span class="line">![a1](blog1\a1.png)			//使用&quot;\&quot;，错误</span><br></pre></td></tr></table></figure>
-
-<p>在Typora中，写入图片路径中无论使用”/“还是”\“，都可以显示图片，但是上传图片后，只有使用“/”才可以正常显示图片。</p>
-</li>
-<li><h5 id="区分文件名和后缀的大小写"><a href="#区分文件名和后缀的大小写" class="headerlink" title="区分文件名和后缀的大小写"></a>区分文件名和后缀的大小写</h5><p>对于同一个文件“a1.png”，使用以下四种写法，在Typora中均可以正常显示，但上传文件后，只有大小写与原文件对应，才会在博客中加载该图片。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![a1](blog1/A1.png)			//文件名大写，错误</span><br><span class="line">![a1](blog1/a1.png)			//文件名与原文件一致，正确</span><br><span class="line">![a1](blog1/a1.PNG)			//后缀名大写，错误</span><br><span class="line">![a1](blog1/a1.png)			//后缀名与原文件一致，正确</span><br></pre></td></tr></table></figure></li>
-</ol>
+<p>这一操作，就是反射机制的使用，大部分Java开源框架就是使用反射机制进行实现的。</p>
+<p>Java反射机制主要提供以下功能：</p>
+<ul>
+<li>在程序运行期间判断一个对象属于哪个类。</li>
+<li>在程序运行期间构造出任意一个类的对象。</li>
+<li>在程序运行期间判断任意一个类具有的成员变量和成员方法。</li>
+<li>在程序运行期间调用任意一个对象的方法。</li>
+<li>生成动态代理。</li>
+</ul>
+<h2 id="三、反射机制的优缺点"><a href="#三、反射机制的优缺点" class="headerlink" title="三、反射机制的优缺点"></a>三、反射机制的优缺点</h2><p>提到反射机制的优缺点，需要先简单提到Java中的两种编译方式：静态编译和动态编译</p>
+<p><em>（两种编译方式参考文章：<u><a href="https://blog.csdn.net/huangwenyi1010/article/details/54170619" target="_blank" rel="noopener">CSDN|《Java之动态编译，静态编译简单理解和实例》|作者：阿_毅</a></u>）</em></p>
+<ul>
+<li>静态编译：在编译时把所有模块都编译进入可执行文件中，当该文件启动时，所有模块将被加载进来。即在编译时确定类型和绑定对象。</li>
+<li>动态编译：按需编译。程序在运行的时候，用到那个模块就编译哪个模块。</li>
+</ul>
+<p>相较于两种方式，后者最大限度发挥了Java的灵活性，降低了类之间的耦合性（当然也有缺点，在上文所引用的文章中有提及）。</p>
+<p>​    对于反射机制而言，其优点就是能实现动态创建对象和编译，体现出很大的灵活性。比如，一个大型的软件，不可能一次就把把它设计的很完美，当这个程序编译后，发布了，当发现需要更新某些功能时，我们不可能要用户把以前的卸载，再重新安装新的版本，假如 这样的话，这个软件肯定是没有多少人用的。采用静态的话，需要把整个程序重新编译一次才可以实现功能 的更新，而采用反射机制的话，它就可以不用卸载，只需要在运行时才动态的创建和编译，就可以实现该功能。 </p>
+<p>  它的缺点是对性能有影响。使用反射基本上是一种解释操作，我们可以告诉JVM，我们希望做什么并且它满足我们的要求。这类操作总是慢于只直接执行相同的操作。</p>
+<h1 id="关于JDOM"><a href="#关于JDOM" class="headerlink" title="关于JDOM"></a>关于JDOM</h1><p>在关于容器的定义中，提到了这么一句话：</p>
+<p><em>“您可以使用一个配置文件（通常是XML），在上面定义好对象的名称、如何产生（Prototype 方式或Singleton 方式）、哪个对象产生之后必须设定成为某个对象的属性等，”</em></p>
+<p>对于使用IoC容器的Spring，自然也会使用XML文件进行配置，那么也就可以引申出JDOM了。</p>
+<h2 id="一、什么是JDOM"><a href="#一、什么是JDOM" class="headerlink" title="一、什么是JDOM"></a>一、什么是JDOM</h2><p>  简单来说，JDOM就是Java中一种用来更加方便操作XML文件的工具。在百度百科中，是这样定义的：</p>
+<blockquote>
+<p>JDOM是一种使用 XML（<a href="https://baike.baidu.com/item/标准通用标记语言/6805073" target="_blank" rel="noopener">标准通用标记语言</a>下的一个子集） 的独特 Java 工具包，它的设计包含 Java 语言的语法乃至语义。</p>
+</blockquote>
+<p>  JDOM是一个开源项目，基于树形结构利用了纯Java技术实现了对XML文档的解析，生成，序列化及多种操作。JDOM直接为Java编程服务，将SAX和DOM功能有效的结合起来。在使用和设计上尽可能地隐藏了XML文档使用过程中的复杂性。</p>
+<p>好家伙，又提到了两玩意儿，一 SAX,一 DOM。在这里附上百科里的定义，仅做粗糙了解，具体的之后再开坑（看吧）。</p>
+<ul>
+<li>SAX:   SAX（simple API for XML）是一种XML解析的替代方法。相比于DOM，SAX是一种速度更快，更有效的方法。它<a href="https://baike.baidu.com/item/逐行扫描/1528535" target="_blank" rel="noopener">逐行扫描</a>文档，一边扫描一边解析。而且相比于DOM，SAX可以在解析文档的任意时刻停止解析，但任何事物都有其相反的一面，对于SAX来说就是操作复杂。</li>
+<li>DOM:  文档对象模型（Document Object Model，简称DOM），是<a href="https://baike.baidu.com/item/W3C" target="_blank" rel="noopener">W3C</a>组织推荐的处理   可扩展标志语言的标准编程接口。在网页上，组织页面（或文档）的对象被组织在一个树形结构中，用来表示文档中对象的标准模型就称为DOM。</li>
+</ul>
+<h2 id="二、eclipse中怎么使用JDOM"><a href="#二、eclipse中怎么使用JDOM" class="headerlink" title="二、eclipse中怎么使用JDOM"></a>二、eclipse中怎么使用JDOM</h2><p>—》》》今晚摸鱼，未完持续</p>
 
     </article>
     <!-- license  -->
@@ -452,17 +447,12 @@ height:65vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/07/15/InterviewNotesJava-1/" title= "Java面试笔记（1）">
-                    <div class="nextTitle">Java面试笔记（1）</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/07/13/blog2/" title= "更新测试">
-                    <div class="prevTitle">更新测试</div>
+                <a href= "/2019/07/28/spring-setter-constructor/" title= "Spring学习笔记（一）——浅谈控制反转（IoC）和依赖注入（DI）">
+                    <div class="prevTitle">Spring学习笔记（一）——浅谈控制反转（IoC）和依赖注入（DI）</div>
                 </a>
             
         </li>
@@ -592,7 +582,7 @@ top:65vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#主要教程"><span class="toc-number">1.</span> <span class="toc-text">主要教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#教程涉及的一些工具-准备工作："><span class="toc-number">1.1.</span> <span class="toc-text">教程涉及的一些工具/准备工作：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一些用到的主要教程贴"><span class="toc-number">1.1.1.</span> <span class="toc-text">一些用到的主要教程贴</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、关于写博客的软件："><span class="toc-number">1.1.1.1.</span> <span class="toc-text">一、关于写博客的软件：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、关于cmd命令："><span class="toc-number">1.1.1.2.</span> <span class="toc-text">二、关于cmd命令：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、关于个人博客里的图片"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">三、关于个人博客里的图片</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#使用相对路径"><span class="toc-number">1.1.1.3.1.</span> <span class="toc-text">使用相对路径</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#注意区分“-”和”-“"><span class="toc-number">1.1.1.3.2.</span> <span class="toc-text">注意区分“\”和”/“</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#区分文件名和后缀的大小写"><span class="toc-number">1.1.1.3.3.</span> <span class="toc-text">区分文件名和后缀的大小写</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#何为“容器”"><span class="toc-number">1.</span> <span class="toc-text">何为“容器”</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Java反射机制"><span class="toc-number">2.</span> <span class="toc-text">Java反射机制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、什么是反射机制"><span class="toc-number">2.1.</span> <span class="toc-text">一、什么是反射机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、一般使用在哪里？该机制提供了什么功能？"><span class="toc-number">2.2.</span> <span class="toc-text">二、一般使用在哪里？该机制提供了什么功能？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、反射机制的优缺点"><span class="toc-number">2.3.</span> <span class="toc-text">三、反射机制的优缺点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关于JDOM"><span class="toc-number">3.</span> <span class="toc-text">关于JDOM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、什么是JDOM"><span class="toc-number">3.1.</span> <span class="toc-text">一、什么是JDOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、eclipse中怎么使用JDOM"><span class="toc-number">3.2.</span> <span class="toc-text">二、eclipse中怎么使用JDOM</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
